@@ -1,3 +1,3 @@
 # Python
 
-Lösungen oder so? idk
+Idk Probier alli lösige zämme kriege
