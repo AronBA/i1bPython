@@ -1,3 +1,6 @@
-# Python
+# Python i1b
 
-Idk Probier alli lösige zämme kriege
+My solutions to most of the Python exercises
+
+Text me on Discord if you wanna have Push perms
+
