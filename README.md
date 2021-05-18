@@ -1,1 +1,3 @@
-# i1bPython
+# Python
+
+Lösungen oder so? idk
