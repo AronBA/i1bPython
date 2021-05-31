@@ -11,14 +11,10 @@ Informatikmittelschule
 ''')
 
 
-istrue = True
-while istrue:
+
+while True:
     userin = input("Input :")
     if userin == "q!":
-        istrue = False
+        break
     else:
         file.write(f"{userin}\n")
-
-
-
-
