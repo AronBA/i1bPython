@@ -10,8 +10,6 @@ Wirtschaftsmittelschule
 Informatikmittelschule 
 ''')
 
-
-
 while True:
     userin = input("Input :")
     if userin == "q!":
