@@ -1,7 +1,4 @@
-
 file = open("fabeln.txt", "r")
-
-
 story = file.read()
 story = story.split("\n")
 story1 = open("Story1.txt","w")
