@@ -1,6 +1,11 @@
 import os
+from tkinter import filedialog
 from tkinter import *
-dir = "../testdir"
+
+
+def dir():
+    dir = filedialog.askdirectory()
+    return dir
 
 def search(dir):
     text = e.get()
@@ -12,11 +17,10 @@ def search(dir):
                     if text in f.read():
                         l = Label(root, text=path)
                         l.pack()
-text = "hello"
 
 root = Tk()
 e = Entry(root,bd =5)
-s = Button(root, text="Search", command= lambda : search(dir))
+s = Button(root, text="Search", command= lambda : search(dir()))
 l1 = Label(root, text="Es wurde in folgenden Dateien gefunden:")
 e.pack()
 s.pack()
