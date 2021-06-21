@@ -9,11 +9,9 @@ def search(dir):
             f = open(f"../testdir/{file}", "r")
             if text in f.read():
                 print(f"Ich hab es gefunden in {file}")
+                global l
                 l = Label(root, text=file)
                 l.pack()
-
-
-
 
 
 
@@ -25,8 +23,10 @@ root = Tk()
 e = Entry(root,bd =5)
 s = Button(root, text="Search", command= lambda : search(dir))
 l1 = Label(root, text="Es wurde in folgenden Dateien gefunden:")
+
 e.pack()
 s.pack()
 l1.pack()
+
 
 root.mainloop()
