@@ -1,12 +1,22 @@
-import os
-text = input("Gib ein nach was du suchst:")
-dir = "../testdir"
+import csv
+data = "data.csv"
+input = int(input("Welche Zeile möchtest du sehen?"))
+fields = []
+rows = []
 
+with open(data, "r") as data:
+    data = csv.reader(data)
+    fields = next(data)
+    for row in data:
+        rows.append(row)
 
-def search(dir, text):
-    for file in os.listdir(dir):
-        if file.endswith(".txt"):
-            f = open(f"../testdir/{file}", "r")
-            if text in f.read():
-                print(f"Ich habe das gesucht in {file} gefunden")
-search(dir, text)
+if input != 0:
+    for row in rows[input]:
+        for col in row:
+            print(col),
+    print('\n')
+else:
+    for row in rows:
+        for col in row:
+            print("%10s" % col),
+    print('\n')
